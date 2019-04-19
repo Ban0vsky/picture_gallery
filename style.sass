@@ -1,0 +1,70 @@
+html
+    scroll-behavior: smooth
+    
+body
+    background: #ccc
+    overflow: hidden
+
+.category
+    background: #111
+    width: 100%
+    padding: 0 0
+    overflow: hidden
+    display: flex
+
+    h3
+        color: black
+        font-size: 1.5rem
+        padding: 2vh 2vw
+        background: rgba(255, 255, 255, 0.6)
+        font-family: 'PT Sans', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        position: absolute
+        z-index: 10
+
+    img
+        height: 100vh
+        width: calc(100vw/3)
+        object-fit: contain
+        transform: scaleX(1)
+        transition: width 0.2s ease
+
+.arrow
+    width: 40px
+    height: 40px
+    border-bottom: 4px solid white
+    border-left: 4px solid white
+    position: fixed
+    cursor: pointer
+
+    &-up
+        transform: rotate(135deg)
+        top: 50px
+        left: 50%
+        display: none
+
+    &-down
+        transform: rotate(-45deg)
+        bottom: 50px
+        left: 50%
+
+    // &::before
+    //     content: ''
+    //     width: 40px
+    //     height: 40px
+    //     position: absolute
+    //     top: 0
+    //     left: 0
+    //     border-bottom: 4px solid black
+    //     border-left: 4px solid black
+    //     filter: blur(2px)
+
+.view-mode
+    position: fixed
+    color: white
+    padding: 2vh 2vw
+    background: rgba(0, 0, 0, 0.5)
+    font-family: 'PT Sans', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-size: 1.3rem
+    top: 5vh
+    left: calc(50% - 135px)
+    display: none

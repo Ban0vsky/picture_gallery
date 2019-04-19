@@ -1,0 +1,57 @@
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background: #ccc;
+  overflow: hidden; }
+
+.category {
+  background: #111;
+  width: 100%;
+  padding: 0 0;
+  overflow: hidden;
+  display: flex; }
+  .category h3 {
+    color: black;
+    font-size: 1.5rem;
+    padding: 2vh 2vw;
+    background: rgba(255, 255, 255, 0.6);
+    font-family: "PT Sans", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    position: absolute;
+    z-index: 10; }
+  .category img {
+    height: 100vh;
+    width: calc(100vw/3);
+    object-fit: contain;
+    transform: scaleX(1);
+    transition: width 0.2s ease; }
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  border-bottom: 4px solid white;
+  border-left: 4px solid white;
+  position: fixed;
+  cursor: pointer; }
+  .arrow-up {
+    transform: rotate(135deg);
+    top: 50px;
+    left: 50%;
+    display: none; }
+  .arrow-down {
+    transform: rotate(-45deg);
+    bottom: 50px;
+    left: 50%; }
+
+.view-mode {
+  position: fixed;
+  color: white;
+  padding: 2vh 2vw;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: "PT Sans", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 1.3rem;
+  top: 5vh;
+  left: calc(50% - 135px);
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */
